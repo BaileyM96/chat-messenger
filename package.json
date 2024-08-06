@@ -8,7 +8,9 @@
     "start": "npm run compile && node ./dist/index.js"
   },
   "dependencies": {
+    "@apollo/server": "^4.10.5",
     "firebase": "^10.12.5",
+    "graphql": "^16.9.0",
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18"
