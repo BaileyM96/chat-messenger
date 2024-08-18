@@ -8,7 +8,7 @@ interface UserProfile {
     username: string;
 }
 
-//ADD REFERENCES TO OTHER SCHEMAS IN THE FUTURE LIKE FRIENDREQUESTS, MESSAGES, ETC.
+
 const userSchema = new Schema<UserProfile>({
     email: { type: String, required: true },
     password: { type: String, required: true },
