@@ -1,4 +1,4 @@
-import { Schema, model, connect } from "mongoose";
+import { Schema, model, models } from "mongoose";
 import bcrypt from "bcryptjs";
 
 
@@ -28,5 +28,5 @@ userSchema.pre("save", async function (next) {
     next();
 });
 
-const User = model<UserProfile>("User", userSchema);
+const User = models.User || model<UserProfile>("User", userSchema);
 export default User;
